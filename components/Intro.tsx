@@ -15,8 +15,8 @@ const Intro = () => {
     const roles = ['FrontEnd', "BackEnd", "DevOps", "Game"];
 
   return (
-    <div className='pb-20 pt-36'>
-        <div>
+    <div className='pb-20 pt-0'>
+        <div className="absolte top-0 left-0">
         <Spotlight
             className="bottom-10 -left-10 md:-left-32 md:-top-20 h-screen"
             fill="white"
@@ -39,14 +39,15 @@ const Intro = () => {
                 duration: 0.8,
                 ease: "easeInOut",
             }}
-            className=" h-screen w-full absolute top-0 left-0 flex flex-col gap-4 px-4"
+            className=""
             >
             <div className="h-screen w-full dark:bg-transparent bg-white  dark:bg-grid-white/[0.03] bg-grid-black/[0.00] 
-            flex items-center justify-center absolute top-0 left-0 gap-10">
+            flex items-center justify-center absolute top-0 left-0">
                 {/* Radial gradient for the container to give a faded look */}
                 <div className="absolute pointer-events-none inset-0 flex dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"/>
-                
-                <div className="max-w-[90vw] md:max-w-xl lg:max-w-[60vw] flex flex-col relative my-20 z-10">
+            </div>
+            <div className="h-screen flex justify-center items-center relative my-20 z-10 flex-row  gap-12">
+                <div className="max-w-[90vw] md:max-w-xl lg:max-w-[60vw] flex flex-col">
                     <div className="text-3xl md:text-7xl font-bold text-white text-left">
                         <h1 className={rowdies.className}>Hi, It's Jade </h1>                                                       
                     </div>
@@ -73,17 +74,6 @@ const Intro = () => {
                 </div>    
                 <Photo />
             </div>
-            
-            
-            {/* <div className="text-3xl md:text-7xl font-bold text-white text-center">
-                Hi, It's Jade                                                        
-            </div>
-            <div className="font-extralight text-base md:text-4xl text-neutral-200 py-4">
-                And this, is chemical burn.
-            </div>
-            <button className="bg-white-100 dark:bg-white rounded-full w-fit text-black-100 dark:text-black px-4 py-2">
-                Debug now
-            </button> */}
         </motion.div>
     </div>
   )
