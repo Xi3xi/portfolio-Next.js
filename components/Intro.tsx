@@ -60,9 +60,7 @@ const Intro = () => {
                     <TextGenerateEffect
                         className="text-justify text-2xl md:max-w-5xl lg:text-6xl  items-center justify-center"
                          words="As a highly motivated and innovative software engineering graduate, I recently completed my Master's degree at the University of Melbourne in mid-2024.
-                        With over two years of experience in both front-end and back-end web application development, I have developed proficiency in Java, React, SQL, Spring Boot, and RESTful APIs, among other technologies. 
-                        My experience also includes working in Agile development environments, where I took on the role of Scrum Master to enhance communication between stakeholders and team members.
-                        Known for my quick learning ability and teamwork skills, I am confident in my capability to contribute effectively to cross-functional teams."
+                        With over two years of experience in both front-end and back-end web application development, I have developed proficiency in Java, React, SQL, Spring Boot, and RESTful APIs, among other technologies. "
                     />
                     <a href="#about">
                         <LitUpButton
