@@ -8,6 +8,7 @@ import { TextGenerateEffect } from "./ui/TextGenerate";
 import { FlipWords } from "./ui/FlipWords";
 import LitUpButton from "./ui/LitUpButton";
 import { FaLocationArrow } from "react-icons/fa";
+import { Photo } from '../components/Photo';
 
 //rafce in Es7+
 const Intro = () => {
@@ -41,11 +42,11 @@ const Intro = () => {
             className=" h-screen w-full absolute top-0 left-0 flex flex-col gap-4 px-4"
             >
             <div className="h-screen w-full dark:bg-transparent bg-white  dark:bg-grid-white/[0.03] bg-grid-black/[0.00] 
-            flex items-center justify-center absolute top-0 left-0">
+            flex items-center justify-center absolute top-0 left-0 gap-10">
                 {/* Radial gradient for the container to give a faded look */}
                 <div className="absolute pointer-events-none inset-0 flex dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"/>
                 
-                <div className="max-w-[90vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col relative my-20 z-10">
+                <div className="max-w-[90vw] md:max-w-xl lg:max-w-[60vw] flex flex-col relative my-20 z-10">
                     <div className="text-3xl md:text-7xl font-bold text-white text-left">
                         <h1 className={rowdies.className}>Hi, It's Jade </h1>                                                       
                     </div>
@@ -69,9 +70,10 @@ const Intro = () => {
                             position="right"
                         />
                     </a>
-                </div>
-                
+                </div>    
+                <Photo />
             </div>
+            
             
             {/* <div className="text-3xl md:text-7xl font-bold text-white text-center">
                 Hi, It's Jade                                                        

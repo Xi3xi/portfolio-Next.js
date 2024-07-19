@@ -1,0 +1,123 @@
+.home-photo{
+    position: relative;
+    border-radius: 50%;
+    width: 20vw;
+    height: 20vw;
+    display: flex;
+}
+.photo{
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    position: relative;
+}
+.photo:hover .photo-bg{
+    transform: perspective(1000px) rotateX(25deg) skewX(-15deg);
+    filter: blur(0.8px);
+}
+.photo:hover .object{
+    transform: scale(1.3);
+}
+.photo-bg{
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    overflow: hidden;
+    left: 23%;
+    /* box-shadow: 0 0 30px rgba(255, 255, 255, 0.664); */
+    transform-origin: bottom;
+    transition: 1.5s;
+}
+.photo-bg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.object{
+    width: 30vw;
+    height: 30vw;
+    border-radius: 50%;
+    position: absolute;
+    /* background: #0095ff; */
+    bottom: 0px;
+    overflow: hidden;
+    transform-origin: bottom;
+    transition: 1.5s;
+}
+.object img{
+    position: relative;
+    width: 100%;
+    height: 70%;
+    left: -9%;
+    bottom: -35%;
+}
+
+.surrounding{
+    position: absolute;
+    display: flex;
+    width: 30vw;
+    height: 30vw;
+    bottom: -20%;
+    left: -3%;
+    justify-content: center;
+    align-items: center;
+}
+.surrounding span:nth-child(1){
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 95%;
+    height: 95%;
+    box-sizing: border-box;
+    border: 2px solid #fdf9ffad;
+    border-radius: 38% 62% 63% 37% / 41% 44% 55% 59%;
+    transition: 0.5s;
+    animation: animate 6s linear infinite;
+}
+.photo:hover span:nth-child(1){
+    border: none;
+    background:#fbfdfd;
+    /* box-shadow: 0 0 30px var(--main-color); */
+}
+
+.surrounding span:nth-child(2){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 2px solid #00aaff86;
+    border-radius: 38% 62% 63% 37% / 41% 44% 55% 59%;
+    transition: 0.5s;
+    animation: animate 4s linear infinite;
+}
+.photo:hover span:nth-child(2){
+    border: none;
+    background:plum;
+    /* box-shadow: 0 0 30px var(--main-color); #00ffee7d*/
+}
+
+.surrounding span:nth-child(3){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 2px solid #eeabff8d;
+    border-radius: 38% 62% 63% 37% / 41% 44% 55% 59%;
+    transition: 0.5s;
+    animation: animate 10s linear infinite;
+}
+.photo:hover span:nth-child(3){
+    border: none;
+    background:#70defab5;
+    transform: scale(1.2);
+    box-shadow: 0 0 30px var(--main-color);
+}
+@keyframes animate{
+    0%{transform: rotate(360deg);}
+    100%{transform: rotate(0deg);}
+}
