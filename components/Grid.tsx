@@ -5,15 +5,22 @@ import { gridItems } from '@/data'
 const Grid = () => {
   return (
     <section id='about'>
-        <BentoGrid>
+        <BentoGrid className="w-full py-20">
             {gridItems.map(
-                (item) => (
+                // if it is not sure whether it exist or not
+                ({
+                    title, id, description, className, imgClassName, titleClassName, img, spareImg
+                }) => (
                     <BentoGridItem
-                        id={item.id}
-                        key={item.id}
-                        title={item.title}
-                        description={item.description}
-                        className={item.className}
+                        id={id}
+                        key={id}
+                        title={title}
+                        description={description}
+                        className={className}
+                        imgClassName={imgClassName}
+                        titleClassName={titleClassName}
+                        img={img}
+                        spareImg={spareImg}
                     />
                 )
             )}

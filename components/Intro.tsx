@@ -46,7 +46,7 @@ const Intro = () => {
                 {/* Radial gradient for the container to give a faded look */}
                 <div className="absolute pointer-events-none inset-0 flex dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"/>
             </div>
-            <div className="h-screen flex justify-center items-center relative my-20 z-10 flex-row  gap-12">
+            <div className="h-screen flex justify-center items-center relative my-20 z-10 flex-row gap-12">
                 <div className="max-w-[90vw] md:max-w-xl lg:max-w-[60vw] flex flex-col">
                     <div className="text-3xl md:text-7xl font-bold text-white text-left">
                         <h1 className={rowdies.className}>Hi, It's Jade </h1>                                                       
@@ -69,6 +69,7 @@ const Intro = () => {
                             title="Display"
                             icon={<FaLocationArrow />}
                             position="right"
+                            otherClasses="justify-center items-center"
                         />
                     </a>
                 </div>    
