@@ -49,11 +49,11 @@ const Intro = () => {
             <div className="h-screen flex justify-center items-center relative my-20 z-10 flex-row gap-12">
                 <div className="max-w-[90vw] md:max-w-xl lg:max-w-[60vw] flex flex-col">
                     <div className="text-3xl md:text-7xl font-bold text-white text-left">
-                        <h1 className={rowdies.className}>Hi, It's Jade </h1>                                                       
+                        <h1 className={rowdies.className}>Hi, It&apos;s Jade </h1>                                                       
                     </div>
                     <div className="px-0 pt-8">
                         <div className="text-3xl mx-auto font-normal text-neutral-600 dark:text-neutral-400">
-                            I'm a
+                            I&apos;m a
                             <FlipWords words={roles} />Engineer<br />
                         </div>
                     </div>
