@@ -1,3 +1,4 @@
+import Experience from "@/components/Experience";
 import Grid from "@/components/Grid";
 import Intro from "@/components/Intro";
 import PreProjects from "@/components/PreProjects";
@@ -16,6 +17,7 @@ export default function Home() {
         <Intro />
         <Grid />
         <PreProjects />
+        <Experience />
       </div>
     </AuroraBackground>
   );

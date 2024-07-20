@@ -8,9 +8,9 @@ import { LiaJenkins } from 'react-icons/lia'
 
 const PreProjects = () => {
   return (
-    <div className='py-20'>
+    <div className='py-20'  id='projects'>
       <h1 className="heading text-slate-200">
-        Recent{" "} <span className="text-lime-50">projects</span>
+        Recent{" "} <span className="text-purple">projects</span>
       </h1>
       <div className='flex flex-wrap items-center justify-center p-4 gap-x-20 gap-y-8 mt-10 text-slate-100'>
         {projects.map(({
