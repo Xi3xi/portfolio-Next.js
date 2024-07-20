@@ -9,7 +9,7 @@ const Experience = () => {
         <h1 className="heading text-slate-200">
             Experience
         </h1>
-        <div className='flex flex-col items-center max-lg:mt-10'>
+        <div className='flex flex-col items-center max-lg:mt-10 '>
         <InfiniteMovingCards 
             items={testimonials}
             direction='right'
