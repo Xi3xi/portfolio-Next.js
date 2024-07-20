@@ -3,8 +3,8 @@ import React from 'react'
 import { PinContainer } from './ui/3DPinCard'
 import { libreBaskerville } from '@/app/fonts'
 import { AnimatedTooltip } from './ui/ToolTip'
-import { FaLocationArrow } from 'react-icons/fa'
-import { LiaJenkins } from 'react-icons/lia'
+import { BsChevronCompactRight} from 'react-icons/bs'
+import { FiArrowUpRight, FiLink } from 'react-icons/fi'
 
 const PreProjects = () => {
   return (
@@ -48,11 +48,12 @@ const PreProjects = () => {
                 <div className="flex items-center">  
                     <AnimatedTooltip items={iconLists} />
                 </div>
-                <div className="flex justify-center items-center">
+                <div className="flex justify-center items-center gap-2">
                   <p className="flex lg:text-xl md:text-sm text-base text-lime-50">
-                    Click To Live Site
+                    Click To Live Site 
                   </p>
-                  <FaLocationArrow className="ms-3" color="#fff" />
+                  <FiLink />
+
                 </div>
                 
             </div>

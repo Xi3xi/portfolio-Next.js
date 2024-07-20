@@ -2,7 +2,7 @@ import React from 'react'
 import { CuteButton } from '../components/CuteButton';
 import { socialMedia } from '@/data';
 import LitUpButton from './ui/LitUpButton';
-import { FaLocationArrow } from 'react-icons/fa';
+import { BsChatLeftHeart } from 'react-icons/bs';
 
 const Footer = () => {
   return (
@@ -18,7 +18,7 @@ const Footer = () => {
         <a href="xin.xiang2024@gmail.com">
           <LitUpButton 
             title="Let's get in touch" 
-            icon={<FaLocationArrow />}
+            icon={<BsChatLeftHeart />}
             position="right"        
          />
 
