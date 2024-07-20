@@ -62,9 +62,9 @@ const Intro = () => {
                          words="As a highly motivated and innovative software engineering graduate, I recently completed my Master's degree at the University of Melbourne in mid-2024.
                         With over two years of experience in both front-end and back-end web application development, I have developed proficiency in Java, React, SQL, Spring Boot, and RESTful APIs, among other technologies. "
                     />
-                    <a href="#about">
+                    <a href="#projects">
                         <LitUpButton
-                            title="Display"
+                            title="Learn More"
                             icon={<FaLocationArrow />}
                             position="right"
                             otherClasses="justify-center items-center"
