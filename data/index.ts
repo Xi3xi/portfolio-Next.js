@@ -103,7 +103,7 @@ export const navItems = [
       des: "A user story validation plugin that integrates high-level requirements validation into the CI/CD pipeline using the Buildkite platform.",
       img: "/backup-output.png",
       iconLists: [
-        {id: 1, name: "Buildkite", image: "/bk.svg"}, 
+        {id: 1, name: "Buildkite", image: "/bk2.png"}, 
         {id: 2, name: "Docker", image: "/dock.svg"}, 
         {id: 3, name: "AWS", image: "/aws.webp"}, 
         {id: 4, name: "Bash", image: "/bash.png"}],
@@ -141,70 +141,80 @@ export const navItems = [
   export const testimonials = [
     {
       quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
+        "Pursuing a Master's in Software Engineering has provided me the perfect platform to create meaningful products that address everyday challenges, such as developing online ticket booking systems, designing FPS games, and conducting SVM training for algorithm analysis. I find immense joy in learning new things, continuously improving myself, and being a creator of useful and impactful solutions.",
+      name: "University of Melbourne",
+      title: "Master of Software Engineering 🧑‍💻",
       profileImg: "unimelb.jpg",
     },
     {
       quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
-      profileImg: "unimelb.jpg",
+        "As the Deputy Director of the Research Department in the Student Union, I promoted and organised key academic events, such as lectures and graduation defenses. This role honed my leadership and organisational skills, as I coordinated various academic activities to enhance the student learning experience. I also discovered a passion for programming, which allows me to create meaningful products that enhance productivity across diverse fields.",
+      name: "Southeast University",
+      title: "Bachelor Of Science 🏆",
+      profileImg: "seu.png",
     },
     {
       quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
-      profileImg: "unimelb.jpg",
-    },
-    {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
-      profileImg: "unimelb.jpg",
-    },
-    {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
-      profileImg: "unimelb.jpg",
+        "During my internship as a Junior DevOps Engineer, I quickly mastered the CI/CD tool Buildkite and developed a fully functional plugin to streamline software testing within an Agile framework. Initially just a concept, I collaborated with a teammate to bring it to life, designing and implementing the core component. This significant work was co-authored into a paper accepted at the SERP'24 conference.",
+      name: "Queue Solutions",
+      title: "Junior DevOps Engineer Intern 🛠️",
+      profileImg: "leon.png",
     },
   ];
   
   export const companies = [
     {
       id: 1,
-      name: "cloudinary",
-      img: "/cloud.svg",
+      name: "Material UI",
+      img: "/mui.png",
       nameImg: "/cloudName.svg",
     },
     {
       id: 2,
-      name: "appwrite",
-      img: "/app.svg",
+      name: "Render",
+      img: "/render.png",
       nameImg: "/appName.svg",
     },
     {
       id: 3,
-      name: "HOSTINGER",
-      img: "/host.svg",
+      name: "Vercel",
+      img: "/vsl.svg",
       nameImg: "/hostName.svg",
     },
     {
       id: 4,
-      name: "stream",
-      img: "/s.svg",
+      name: "Terraform",
+      img: "/tf.png",
       nameImg: "/streamName.svg",
     },
     {
       id: 5,
       name: "docker.",
       img: "/dock.svg",
+      nameImg: "/dockerName.svg",
+    },
+    {
+      id: 6,
+      name: "Aceternity UI",
+      img: "/a.png",
+      nameImg: "/dockerName.svg",
+    },
+    {
+      id: 7,
+      name: "Tailwind",
+      img: "/tw.png",
+      nameImg: "/dockerName.svg",
+    },
+    {
+      id: 8,
+      name: "Next.js",
+      img: "/next.png",
+      nameImg: "/dockerName.svg",
+    },
+    {
+      id: 9,
+      name: "Buildkite",
+      img: "/bk2.png",
       nameImg: "/dockerName.svg",
     },
   ];

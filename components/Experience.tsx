@@ -6,7 +6,7 @@ import { Button } from './ui/MovingBorder'
 const Experience = () => {
   return (
     <div className='py-20'  id='experience'>
-        <h1 className="heading text-slate-200">
+        <h1 className="heading text-slate-200  mb-8">
             Experience
         </h1>
         <div className='flex flex-col items-center max-lg:mt-10 '>
@@ -29,12 +29,13 @@ const Experience = () => {
                         alt={name}
                         className="md:w-10 w-5"
                     />
-                    <img
+                    {/* <img
                         src={nameImg}
                         alt={name}
                         width={id === 4 || id === 5 ? 100 : 150}
                         className="md:w-20 w-20"
-                    />
+                    /> */}
+                    <p className='text-xl'>{name}</p>
                     </Button>
                 </div>
             ))}

@@ -88,9 +88,9 @@ export const InfiniteMovingCards = ({
       >
         {items.map((item, idx) => (
           <li
-            className="w-[60vw] md:w-[60vw] relative rounded-2xl hover:shadow-2xl hover:shadow-slate-900/[0.2] border border-b-0 flex-shrink-0 border-white/[0.2] p-5 md:p-16"
+            className="w-[80vw] md:w-[80vw] relative rounded-2xl hover:shadow-2xl hover:shadow-slate-900/[0.2] border border-b-0 flex-shrink-0 border-white/[0.2] p-5 md:p-16"
             style={{
-              background: " rgb(138, 138, 138, 0.2)",
+              background: " rgb(200,200,200, 0.05)",
               backgroundColor:
                 "linear-gradient(90deg, rgba(145, 67, 67, 1) 0%, rgba(111, 145, 67, 1) 30%, rgba(67, 145, 129, 1) 60%, rgba(85, 67, 145, 1) 100%)",
             }}
@@ -105,14 +105,14 @@ export const InfiniteMovingCards = ({
                 {item.quote}
               </span>
               <div className="relative z-20 mt-6 flex flex-row items-center">
-                <div className="me-3 w-16 h-16">
-                  <img src={item.profileImg} alt="profile" />
+                <div className="me-3 h-16">
+                  <img src={item.profileImg} alt="profile" className="h-16" />
                 </div>
                 <div className="flex flex-col gap-1">
                   <span className=" text-xl leading-[1.6] text-gray-300 font-normal">
                     {item.name}
                   </span>
-                  <span className=" text-sm leading-[1.6] text-gray-600 font-normal">
+                  <span className=" text-base leading-[1.6] text-gray-400 font-normal">
                     {item.title}
                   </span>
                 </div>
