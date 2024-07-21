@@ -116,24 +116,22 @@ export const BentoGridItem = ({
         {id === 3 && (
             <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
             {/* tech stack lists */}
-                <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
-                    {['React.js', 'Next.js', 'TypeScript','JavaScript'].map((item) => (
+                <div className="flex flex-col gap-3 md:gap-3 lg:gap-8 animate-scrollVertical antialiased">
+                    {['React.js', 'Next.js', 'TypeScript','JavaScript', 'HTML', 'CSS'].map((item) => (
                         <span
                             key={item}
-                            className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#2d2d2d5f] text-slate text-slate-100"
+                            className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-indigo-900/[0.2] text-slate text-slate-100"
                         >
                             {item}
                         </span>
                     ))}
-                    <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#28282873] text-slate-300"></span>
                 </div>
                 
-                <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
-                    <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#5a5a5a3c] text-slate-300"></span>
-                    {['AWS', 'Spring Boot', 'Buildkite','PostgreDB'].map((item) => (
+                <div className="flex flex-col gap-3 md:gap-3 lg:gap-8 h-full animate-scrollY">
+                    {['AWS', 'Spring Boot', 'Buildkite','PostgreSQL','AWS', 'Spring Boot', 'Buildkite','PostgreSQL'].map((item) => (
                         <span
                             key={item}
-                            className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#4854b151] text-slate text-slate-100"
+                            className="top-6 lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-zinc-500/[0.1] text-slate text-slate-100"
                         >
                             {item}
                         </span>

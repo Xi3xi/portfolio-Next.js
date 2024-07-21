@@ -154,6 +154,17 @@ const config = {
             transform: "translate(calc(-50% - 0.5rem))",
           },
         },
+        scrollY: {
+          to: {
+            transform: "translateY(calc(-50% - 0.5rem))",
+          },
+        },
+        scrollYB: {
+          to: {
+            transform: "translateY(calc(50% + 0.5rem))",
+          },
+        },
+        
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -169,6 +180,10 @@ const config = {
         sixth: "scroll var(--animation-duration, 10s) var(--animation-direction, forwards) linear infinite",
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+        scrollY:
+          "scrollY var(--animation-duration, 20s) var(--animation-direction, forwards) linear infinite",
+        scrollVertical:
+          "scrollYB var(--animation-duration, 20s) var(--animation-direction, forwards) linear infinite",
       },
     },
   },

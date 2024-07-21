@@ -29,14 +29,14 @@ const PreProjects = () => {
                 <img
                   src={img}
                   alt="cover"
-                  className="z-10 absolute bottom-0 scale-105"
+                  className="z-10 absolute -bottom-4 left-6 rotate-3"
                 />
               </div>
               <h1 className={`${libreBaskerville.className} font-bold lg:text-2xl md:text-xl text-base line-clamp-1`}>
                 {title}
               </h1>
               <p
-                className="relative z-20 lg:text-xl lg:font-normal font-light text-sm line-clamp-2"
+                className="flex relative z-20 lg:font-normal text-sm line-clamp-2"
                 style={{
                   color: "#BEC1DD",
                   margin: "1vh 0",
@@ -49,7 +49,7 @@ const PreProjects = () => {
                     <AnimatedTooltip items={iconLists} />
                 </div>
                 <div className="flex justify-center items-center gap-2">
-                  <p className="flex lg:text-xl md:text-sm text-base text-lime-50">
+                  <p className="flex lg:text-xl md:text-sm text-base text-neutral-200">
                     Click To Live Site 
                   </p>
                   <FiLink />
