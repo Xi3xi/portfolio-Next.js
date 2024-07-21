@@ -1,12 +1,33 @@
+'use client'
+
 import React from 'react'
+import { useState } from "react";
 import { CuteButton } from '../components/CuteButton';
 import { socialMedia } from '@/data';
 import LitUpButton from './ui/LitUpButton';
+import animationData from '@/data/confetti.json';
+import Lottie from "react-lottie";
+import { IoCopyOutline } from "react-icons/io5";
 import { BsChatLeftHeart } from 'react-icons/bs';
 
 const Footer = () => {
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = () => {
+    const text = "xin.xiang2024@gmail.com";
+    navigator.clipboard.writeText(text);
+    setCopied(true);
+  };
+  
   return (
     <footer className="w-full pb-10 mb-[100px] md:mb-5 text-zinc-100" id="contact">
+      <div className="w-full absolute left-0 -bottom-72 min-h-96">
+        <img
+          src="/footer-grid.svg"
+          alt="grid"
+          className="w-full h-full opacity-50 "
+        />
+      </div>
       <div className="flex flex-col items-center ">
         <h1 className="heading lg:max-w-[45vw]">
           Contact <span className="text-purple">Me</span>
@@ -15,11 +36,23 @@ const Footer = () => {
             Reach out to me to discuss anything that interests you, or share any suggestions for improvement. 
             <span className="text-violet-400"> Your feedback is always welcome!</span>
         </p>
-        <a href="xin.xiang2024@gmail.com">
+        <a href="https://mail.google.com/mail/u/0/#inbox">
+          <div className={`absolute -bottom-5 right-0`}>
+            <Lottie options={{
+                loop: copied,
+                autoplay: copied,
+                animationData: animationData,
+                rendererSettings: {
+                preserveAspectRatio: 'xMidYMid slice',
+              }
+            }} />
+          </div>
+
           <LitUpButton 
-            title="Let's get in touch" 
+            title={copied ? 'Email copied' : "Lets get in touch"}
             icon={<BsChatLeftHeart />}
-            position="right"        
+            position="right"   
+            handleClick={handleCopy} 
          />
 
         </a>
